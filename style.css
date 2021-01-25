@@ -1,0 +1,68 @@
+body {
+    font-family: 'Open Sans';
+    background-color: white;
+    color: #333333;
+}
+#wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#main > div {
+    
+    
+    background:url(placeholder-image.png), linear-gradient(#9db6f8 80%,rgb(248, 242, 242) 20%) ;
+    background-size: cover;
+    background-position: center;
+    
+    height: 130px;
+    border-radius: 10px;
+    
+    text-align: center;
+    line-height: 230px;
+    
+}
+.content {
+    flex-basis: 18%;
+    box-sizing: border-box;
+    margin: 5px;
+}
+h1 {
+    font-size:32px;
+}
+p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        flex-basis: 18%;
+    } h1 {
+        font-size: 30px;
+    } p {
+        font-size: 15px ;
+    }
+}
+@media screen and (max-width: 780px) {
+    .content {
+        flex-basis: 29%;
+    } h1 {
+        font-size: 27px;
+    } p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .content {
+        flex-basis: 100%;
+    } h1 {
+        font-size: 25px;
+    } p {
+        font-size: 13px;
+    }
+}
